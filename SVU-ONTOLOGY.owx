@@ -1,0 +1,1592 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/universitySVU"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/universitySVU">
+    <Prefix name="" IRI="http://www.semanticweb.org/mahaq/ontologies/2025/0/untitled-ontology-5/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="universitySVU" IRI="http://www.semanticweb.org/universitySVU#"/>
+    <Declaration>
+        <Class IRI="#Cost"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Course"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Manager"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Program"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Teacher"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCost"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCourse"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasManager"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#taughtBy"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#academicRank"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#costCurrency"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#costValue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#courseCost"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#emailAddress"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#maxYears"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#minYears"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#programCost"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AWM_EUR"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AWM_SYR"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AWM_USD"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Advanced_Conceps_ln_Data_Repository__and_Data_Exchange"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Advanced_SQL_Programming"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BACT"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BACT_SYR"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BACT_USD"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BAIT"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BAIT_EUR"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BAIT_SYR"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BAIT_USD"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BIS"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BIS_EUR"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BIS_SYR"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BIS_USD"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Bact_EUR"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Computer_Skills"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Data_mining"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Decision_Theory"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Digital_Electronics"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Distributed__Applications__Programming"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#EUR"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hyper_and_Multimedia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ITE"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ITE_EUR"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ITE_SYR"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ITE_USD"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MCS"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MCS_EUR"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MCS_SYR"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MCS_USD"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MNT"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MNT_EUR"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MNT_SYR"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MNT_USD"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MWS"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MWS_EUR"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MWS_SYR"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MWS_USD"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MWT"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MWT_EUR"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MWT_SYR"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MWT_USD"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Mobile_Web"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PHD_EUR"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PHD_SYR"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PHD_USD"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PhD_in_informatics"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Routing_Principles"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SYR"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#USD"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Web_Engineering"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Web_Mining"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Web_Security"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Web_programing"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#lnformation_Retrieval"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#lntroduction_to_Networks"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#أبي_صندوق"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#إيمان_الخطيب"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#باسل_الخطيب"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#بسام_الكردي"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#جورج_كراز"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#خالد_عمر"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ديانا_الجوهري"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#رائوف_حمدان"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#راتب_بلخي"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#رداد_الكنج"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#رضوان_قسطنطين"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#زهير_أحمد"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#سيرا_أستور"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#طارق_الساطي"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#طلال_الشهابي"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#عبده_الخوري"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#عمر_النحاس"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ماجدة_البكور"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#مجد_محمد_نصوح_الجمالي"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#محمد_الجنيدي"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#محمد_المصطفى"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#محمد_حجوز"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#محمد_سعيد_أبو_تراب"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#وسيم_الجنيدي"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#وسيم_صافي"/>
+    </Declaration>
+    <ClassAssertion>
+        <Class IRI="#Course"/>
+        <NamedIndividual IRI="#AWM_EUR"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Course"/>
+        <NamedIndividual IRI="#AWM_SYR"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Course"/>
+        <NamedIndividual IRI="#AWM_USD"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Course"/>
+        <NamedIndividual IRI="#Advanced_Conceps_ln_Data_Repository__and_Data_Exchange"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Course"/>
+        <NamedIndividual IRI="#Advanced_SQL_Programming"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Program"/>
+        <NamedIndividual IRI="#BACT"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Program"/>
+        <NamedIndividual IRI="#BACT_SYR"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Program"/>
+        <NamedIndividual IRI="#BACT_USD"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Program"/>
+        <NamedIndividual IRI="#BAIT"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Program"/>
+        <NamedIndividual IRI="#BAIT_EUR"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Program"/>
+        <NamedIndividual IRI="#BAIT_SYR"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Program"/>
+        <NamedIndividual IRI="#BAIT_USD"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Program"/>
+        <NamedIndividual IRI="#BIS"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Program"/>
+        <NamedIndividual IRI="#BIS_EUR"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Program"/>
+        <NamedIndividual IRI="#BIS_SYR"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Program"/>
+        <NamedIndividual IRI="#BIS_USD"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Program"/>
+        <NamedIndividual IRI="#Bact_EUR"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Course"/>
+        <NamedIndividual IRI="#Computer_Skills"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Course"/>
+        <NamedIndividual IRI="#Data_mining"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Course"/>
+        <NamedIndividual IRI="#Decision_Theory"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Course"/>
+        <NamedIndividual IRI="#Digital_Electronics"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Course"/>
+        <NamedIndividual IRI="#Distributed__Applications__Programming"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Cost"/>
+        <NamedIndividual IRI="#EUR"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Course"/>
+        <NamedIndividual IRI="#Hyper_and_Multimedia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Program"/>
+        <NamedIndividual IRI="#ITE"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Program"/>
+        <NamedIndividual IRI="#ITE_EUR"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Program"/>
+        <NamedIndividual IRI="#ITE_SYR"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Program"/>
+        <NamedIndividual IRI="#ITE_USD"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Program"/>
+        <NamedIndividual IRI="#MCS"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Program"/>
+        <NamedIndividual IRI="#MCS_EUR"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Program"/>
+        <NamedIndividual IRI="#MCS_SYR"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Program"/>
+        <NamedIndividual IRI="#MCS_USD"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Program"/>
+        <NamedIndividual IRI="#MNT"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Program"/>
+        <NamedIndividual IRI="#MNT_EUR"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Program"/>
+        <NamedIndividual IRI="#MNT_SYR"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Program"/>
+        <NamedIndividual IRI="#MNT_USD"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Program"/>
+        <NamedIndividual IRI="#MWS"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Program"/>
+        <NamedIndividual IRI="#MWS_EUR"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Program"/>
+        <NamedIndividual IRI="#MWS_SYR"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Program"/>
+        <NamedIndividual IRI="#MWS_USD"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Program"/>
+        <NamedIndividual IRI="#MWT"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Program"/>
+        <NamedIndividual IRI="#MWT_EUR"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Program"/>
+        <NamedIndividual IRI="#MWT_SYR"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Program"/>
+        <NamedIndividual IRI="#MWT_USD"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Course"/>
+        <NamedIndividual IRI="#Mobile_Web"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Program"/>
+        <NamedIndividual IRI="#PHD_EUR"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Program"/>
+        <NamedIndividual IRI="#PHD_SYR"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Program"/>
+        <NamedIndividual IRI="#PHD_USD"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Program"/>
+        <NamedIndividual IRI="#PhD_in_informatics"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Course"/>
+        <NamedIndividual IRI="#Routing_Principles"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Cost"/>
+        <NamedIndividual IRI="#SYR"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Cost"/>
+        <NamedIndividual IRI="#USD"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Course"/>
+        <NamedIndividual IRI="#Web_Engineering"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Course"/>
+        <NamedIndividual IRI="#Web_Mining"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Course"/>
+        <NamedIndividual IRI="#Web_Security"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Course"/>
+        <NamedIndividual IRI="#Web_programing"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Course"/>
+        <NamedIndividual IRI="#lnformation_Retrieval"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Course"/>
+        <NamedIndividual IRI="#lntroduction_to_Networks"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Teacher"/>
+        <NamedIndividual IRI="#أبي_صندوق"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Teacher"/>
+        <NamedIndividual IRI="#إيمان_الخطيب"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Manager"/>
+        <NamedIndividual IRI="#باسل_الخطيب"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Teacher"/>
+        <NamedIndividual IRI="#بسام_الكردي"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Teacher"/>
+        <NamedIndividual IRI="#جورج_كراز"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Teacher"/>
+        <NamedIndividual IRI="#خالد_عمر"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Teacher"/>
+        <NamedIndividual IRI="#ديانا_الجوهري"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Teacher"/>
+        <NamedIndividual IRI="#رائوف_حمدان"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Manager"/>
+        <NamedIndividual IRI="#راتب_بلخي"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Teacher"/>
+        <NamedIndividual IRI="#رداد_الكنج"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Manager"/>
+        <NamedIndividual IRI="#رضوان_قسطنطين"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Manager"/>
+        <NamedIndividual IRI="#زهير_أحمد"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Manager"/>
+        <NamedIndividual IRI="#سيرا_أستور"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Teacher"/>
+        <NamedIndividual IRI="#طارق_الساطي"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Manager"/>
+        <NamedIndividual IRI="#طلال_الشهابي"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Teacher"/>
+        <NamedIndividual IRI="#عبده_الخوري"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Teacher"/>
+        <NamedIndividual IRI="#عمر_النحاس"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Teacher"/>
+        <NamedIndividual IRI="#ماجدة_البكور"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Manager"/>
+        <NamedIndividual IRI="#مجد_محمد_نصوح_الجمالي"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Manager"/>
+        <NamedIndividual IRI="#محمد_الجنيدي"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Teacher"/>
+        <NamedIndividual IRI="#محمد_المصطفى"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Teacher"/>
+        <NamedIndividual IRI="#محمد_حجوز"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Teacher"/>
+        <NamedIndividual IRI="#محمد_سعيد_أبو_تراب"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Manager"/>
+        <NamedIndividual IRI="#وسيم_الجنيدي"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Teacher"/>
+        <NamedIndividual IRI="#وسيم_صافي"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#taughtBy"/>
+        <NamedIndividual IRI="#Advanced_Conceps_ln_Data_Repository__and_Data_Exchange"/>
+        <NamedIndividual IRI="#عبده_الخوري"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#taughtBy"/>
+        <NamedIndividual IRI="#Advanced_SQL_Programming"/>
+        <NamedIndividual IRI="#أبي_صندوق"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#taughtBy"/>
+        <NamedIndividual IRI="#Advanced_SQL_Programming"/>
+        <NamedIndividual IRI="#عبده_الخوري"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCost"/>
+        <NamedIndividual IRI="#BACT"/>
+        <NamedIndividual IRI="#BACT_SYR"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCost"/>
+        <NamedIndividual IRI="#BACT"/>
+        <NamedIndividual IRI="#BACT_USD"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCost"/>
+        <NamedIndividual IRI="#BACT"/>
+        <NamedIndividual IRI="#Bact_EUR"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCourse"/>
+        <NamedIndividual IRI="#BACT"/>
+        <NamedIndividual IRI="#Data_mining"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCourse"/>
+        <NamedIndividual IRI="#BACT"/>
+        <NamedIndividual IRI="#Decision_Theory"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCourse"/>
+        <NamedIndividual IRI="#BACT"/>
+        <NamedIndividual IRI="#Routing_Principles"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasManager"/>
+        <NamedIndividual IRI="#BACT"/>
+        <NamedIndividual IRI="#رضوان_قسطنطين"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCost"/>
+        <NamedIndividual IRI="#BAIT"/>
+        <NamedIndividual IRI="#BAIT_SYR"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCost"/>
+        <NamedIndividual IRI="#BAIT"/>
+        <NamedIndividual IRI="#BAIT_USD"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCost"/>
+        <NamedIndividual IRI="#BAIT"/>
+        <NamedIndividual IRI="#Bact_EUR"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCourse"/>
+        <NamedIndividual IRI="#BAIT"/>
+        <NamedIndividual IRI="#Computer_Skills"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCourse"/>
+        <NamedIndividual IRI="#BAIT"/>
+        <NamedIndividual IRI="#Data_mining"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCourse"/>
+        <NamedIndividual IRI="#BAIT"/>
+        <NamedIndividual IRI="#Decision_Theory"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCourse"/>
+        <NamedIndividual IRI="#BAIT"/>
+        <NamedIndividual IRI="#Digital_Electronics"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCourse"/>
+        <NamedIndividual IRI="#BAIT"/>
+        <NamedIndividual IRI="#Distributed__Applications__Programming"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasManager"/>
+        <NamedIndividual IRI="#BAIT"/>
+        <NamedIndividual IRI="#زهير_أحمد"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCost"/>
+        <NamedIndividual IRI="#BIS"/>
+        <NamedIndividual IRI="#BIS_EUR"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCost"/>
+        <NamedIndividual IRI="#BIS"/>
+        <NamedIndividual IRI="#BIS_SYR"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCost"/>
+        <NamedIndividual IRI="#BIS"/>
+        <NamedIndividual IRI="#BIS_USD"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCourse"/>
+        <NamedIndividual IRI="#BIS"/>
+        <NamedIndividual IRI="#Advanced_Conceps_ln_Data_Repository__and_Data_Exchange"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCourse"/>
+        <NamedIndividual IRI="#BIS"/>
+        <NamedIndividual IRI="#Advanced_SQL_Programming"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCourse"/>
+        <NamedIndividual IRI="#BIS"/>
+        <NamedIndividual IRI="#Mobile_Web"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCourse"/>
+        <NamedIndividual IRI="#BIS"/>
+        <NamedIndividual IRI="#Web_Mining"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasManager"/>
+        <NamedIndividual IRI="#BIS"/>
+        <NamedIndividual IRI="#مجد_محمد_نصوح_الجمالي"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#taughtBy"/>
+        <NamedIndividual IRI="#Computer_Skills"/>
+        <NamedIndividual IRI="#خالد_عمر"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#taughtBy"/>
+        <NamedIndividual IRI="#Data_mining"/>
+        <NamedIndividual IRI="#ديانا_الجوهري"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#taughtBy"/>
+        <NamedIndividual IRI="#Data_mining"/>
+        <NamedIndividual IRI="#عبده_الخوري"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#taughtBy"/>
+        <NamedIndividual IRI="#Data_mining"/>
+        <NamedIndividual IRI="#ماجدة_البكور"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#taughtBy"/>
+        <NamedIndividual IRI="#Decision_Theory"/>
+        <NamedIndividual IRI="#رائوف_حمدان"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#taughtBy"/>
+        <NamedIndividual IRI="#Digital_Electronics"/>
+        <NamedIndividual IRI="#محمد_المصطفى"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#taughtBy"/>
+        <NamedIndividual IRI="#Distributed__Applications__Programming"/>
+        <NamedIndividual IRI="#وسيم_الجنيدي"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#taughtBy"/>
+        <NamedIndividual IRI="#Hyper_and_Multimedia"/>
+        <NamedIndividual IRI="#محمد_الجنيدي"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#taughtBy"/>
+        <NamedIndividual IRI="#Hyper_and_Multimedia"/>
+        <NamedIndividual IRI="#وسيم_صافي"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCost"/>
+        <NamedIndividual IRI="#ITE"/>
+        <NamedIndividual IRI="#ITE_EUR"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCost"/>
+        <NamedIndividual IRI="#ITE"/>
+        <NamedIndividual IRI="#ITE_SYR"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCost"/>
+        <NamedIndividual IRI="#ITE"/>
+        <NamedIndividual IRI="#ITE_USD"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCourse"/>
+        <NamedIndividual IRI="#ITE"/>
+        <NamedIndividual IRI="#Computer_Skills"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCourse"/>
+        <NamedIndividual IRI="#ITE"/>
+        <NamedIndividual IRI="#Digital_Electronics"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCourse"/>
+        <NamedIndividual IRI="#ITE"/>
+        <NamedIndividual IRI="#Web_Engineering"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCourse"/>
+        <NamedIndividual IRI="#ITE"/>
+        <NamedIndividual IRI="#Web_Security"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCourse"/>
+        <NamedIndividual IRI="#ITE"/>
+        <NamedIndividual IRI="#lnformation_Retrieval"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCourse"/>
+        <NamedIndividual IRI="#ITE"/>
+        <NamedIndividual IRI="#lntroduction_to_Networks"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasManager"/>
+        <NamedIndividual IRI="#ITE"/>
+        <NamedIndividual IRI="#محمد_الجنيدي"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCost"/>
+        <NamedIndividual IRI="#MCS"/>
+        <NamedIndividual IRI="#MCS_EUR"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCost"/>
+        <NamedIndividual IRI="#MCS"/>
+        <NamedIndividual IRI="#MCS_SYR"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCost"/>
+        <NamedIndividual IRI="#MCS"/>
+        <NamedIndividual IRI="#MCS_USD"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCourse"/>
+        <NamedIndividual IRI="#MCS"/>
+        <NamedIndividual IRI="#Advanced_Conceps_ln_Data_Repository__and_Data_Exchange"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCourse"/>
+        <NamedIndividual IRI="#MCS"/>
+        <NamedIndividual IRI="#Decision_Theory"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCourse"/>
+        <NamedIndividual IRI="#MCS"/>
+        <NamedIndividual IRI="#Hyper_and_Multimedia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCourse"/>
+        <NamedIndividual IRI="#MCS"/>
+        <NamedIndividual IRI="#Routing_Principles"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCourse"/>
+        <NamedIndividual IRI="#MCS"/>
+        <NamedIndividual IRI="#Web_Engineering"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCourse"/>
+        <NamedIndividual IRI="#MCS"/>
+        <NamedIndividual IRI="#lntroduction_to_Networks"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCost"/>
+        <NamedIndividual IRI="#MNT"/>
+        <NamedIndividual IRI="#MNT_EUR"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCost"/>
+        <NamedIndividual IRI="#MNT"/>
+        <NamedIndividual IRI="#MNT_SYR"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCost"/>
+        <NamedIndividual IRI="#MNT"/>
+        <NamedIndividual IRI="#MNT_USD"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCourse"/>
+        <NamedIndividual IRI="#MNT"/>
+        <NamedIndividual IRI="#Advanced_SQL_Programming"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCourse"/>
+        <NamedIndividual IRI="#MNT"/>
+        <NamedIndividual IRI="#Digital_Electronics"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCourse"/>
+        <NamedIndividual IRI="#MNT"/>
+        <NamedIndividual IRI="#Mobile_Web"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCourse"/>
+        <NamedIndividual IRI="#MNT"/>
+        <NamedIndividual IRI="#Web_Security"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCourse"/>
+        <NamedIndividual IRI="#MNT"/>
+        <NamedIndividual IRI="#lnformation_Retrieval"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasManager"/>
+        <NamedIndividual IRI="#MNT"/>
+        <NamedIndividual IRI="#وسيم_الجنيدي"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCost"/>
+        <NamedIndividual IRI="#MWS"/>
+        <NamedIndividual IRI="#MWS_EUR"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCost"/>
+        <NamedIndividual IRI="#MWS"/>
+        <NamedIndividual IRI="#MWS_SYR"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCost"/>
+        <NamedIndividual IRI="#MWS"/>
+        <NamedIndividual IRI="#MWS_USD"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCourse"/>
+        <NamedIndividual IRI="#MWS"/>
+        <NamedIndividual IRI="#Advanced_Conceps_ln_Data_Repository__and_Data_Exchange"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCourse"/>
+        <NamedIndividual IRI="#MWS"/>
+        <NamedIndividual IRI="#Computer_Skills"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCourse"/>
+        <NamedIndividual IRI="#MWS"/>
+        <NamedIndividual IRI="#Data_mining"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCourse"/>
+        <NamedIndividual IRI="#MWS"/>
+        <NamedIndividual IRI="#Hyper_and_Multimedia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCourse"/>
+        <NamedIndividual IRI="#MWS"/>
+        <NamedIndividual IRI="#Mobile_Web"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCourse"/>
+        <NamedIndividual IRI="#MWS"/>
+        <NamedIndividual IRI="#Web_Engineering"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCourse"/>
+        <NamedIndividual IRI="#MWS"/>
+        <NamedIndividual IRI="#Web_Mining"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCourse"/>
+        <NamedIndividual IRI="#MWS"/>
+        <NamedIndividual IRI="#Web_Security"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasManager"/>
+        <NamedIndividual IRI="#MWS"/>
+        <NamedIndividual IRI="#باسل_الخطيب"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCost"/>
+        <NamedIndividual IRI="#MWT"/>
+        <NamedIndividual IRI="#MWT_EUR"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCost"/>
+        <NamedIndividual IRI="#MWT"/>
+        <NamedIndividual IRI="#MWT_SYR"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCost"/>
+        <NamedIndividual IRI="#MWT"/>
+        <NamedIndividual IRI="#MWT_USD"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCourse"/>
+        <NamedIndividual IRI="#MWT"/>
+        <NamedIndividual IRI="#Advanced_Conceps_ln_Data_Repository__and_Data_Exchange"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCourse"/>
+        <NamedIndividual IRI="#MWT"/>
+        <NamedIndividual IRI="#Decision_Theory"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCourse"/>
+        <NamedIndividual IRI="#MWT"/>
+        <NamedIndividual IRI="#Distributed__Applications__Programming"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCourse"/>
+        <NamedIndividual IRI="#MWT"/>
+        <NamedIndividual IRI="#Hyper_and_Multimedia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCourse"/>
+        <NamedIndividual IRI="#MWT"/>
+        <NamedIndividual IRI="#Routing_Principles"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasManager"/>
+        <NamedIndividual IRI="#MWT"/>
+        <NamedIndividual IRI="#سيرا_أستور"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#taughtBy"/>
+        <NamedIndividual IRI="#Mobile_Web"/>
+        <NamedIndividual IRI="#راتب_بلخي"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCost"/>
+        <NamedIndividual IRI="#PhD_in_informatics"/>
+        <NamedIndividual IRI="#PHD_EUR"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCost"/>
+        <NamedIndividual IRI="#PhD_in_informatics"/>
+        <NamedIndividual IRI="#PHD_SYR"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCost"/>
+        <NamedIndividual IRI="#PhD_in_informatics"/>
+        <NamedIndividual IRI="#PHD_USD"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCourse"/>
+        <NamedIndividual IRI="#PhD_in_informatics"/>
+        <NamedIndividual IRI="#Computer_Skills"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#taughtBy"/>
+        <NamedIndividual IRI="#Routing_Principles"/>
+        <NamedIndividual IRI="#سيرا_أستور"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#taughtBy"/>
+        <NamedIndividual IRI="#Web_Engineering"/>
+        <NamedIndividual IRI="#رداد_الكنج"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#taughtBy"/>
+        <NamedIndividual IRI="#Web_Engineering"/>
+        <NamedIndividual IRI="#عبده_الخوري"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCost"/>
+        <NamedIndividual IRI="#Web_Mining"/>
+        <NamedIndividual IRI="#AWM_EUR"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCost"/>
+        <NamedIndividual IRI="#Web_Mining"/>
+        <NamedIndividual IRI="#AWM_SYR"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#taughtBy"/>
+        <NamedIndividual IRI="#Web_Mining"/>
+        <NamedIndividual IRI="#إيمان_الخطيب"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#taughtBy"/>
+        <NamedIndividual IRI="#Web_Security"/>
+        <NamedIndividual IRI="#محمد_الجنيدي"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#taughtBy"/>
+        <NamedIndividual IRI="#Web_Security"/>
+        <NamedIndividual IRI="#وسيم_الجنيدي"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#taughtBy"/>
+        <NamedIndividual IRI="#Web_programing"/>
+        <NamedIndividual IRI="#جورج_كراز"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#taughtBy"/>
+        <NamedIndividual IRI="#lnformation_Retrieval"/>
+        <NamedIndividual IRI="#باسل_الخطيب"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#taughtBy"/>
+        <NamedIndividual IRI="#lntroduction_to_Networks"/>
+        <NamedIndividual IRI="#محمد_الجنيدي"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#taughtBy"/>
+        <NamedIndividual IRI="#lntroduction_to_Networks"/>
+        <NamedIndividual IRI="#وسيم_الجنيدي"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#costCurrency"/>
+        <NamedIndividual IRI="#AWM_EUR"/>
+        <Literal>EUR</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#costValue"/>
+        <NamedIndividual IRI="#AWM_EUR"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">200</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#costCurrency"/>
+        <NamedIndividual IRI="#AWM_SYR"/>
+        <Literal>SYR</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#costValue"/>
+        <NamedIndividual IRI="#AWM_SYR"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">2070000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#costCurrency"/>
+        <NamedIndividual IRI="#AWM_USD"/>
+        <Literal>USD</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#costValue"/>
+        <NamedIndividual IRI="#AWM_USD"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">250</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#maxYears"/>
+        <NamedIndividual IRI="#BACT"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">9</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#minYears"/>
+        <NamedIndividual IRI="#BACT"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#programCost"/>
+        <NamedIndividual IRI="#BACT"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">400</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#costCurrency"/>
+        <NamedIndividual IRI="#BACT_SYR"/>
+        <Literal>SYR</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#costValue"/>
+        <NamedIndividual IRI="#BACT_SYR"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1500000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#costCurrency"/>
+        <NamedIndividual IRI="#BACT_USD"/>
+        <Literal>USD</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#costValue"/>
+        <NamedIndividual IRI="#BACT_USD"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1300</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#maxYears"/>
+        <NamedIndividual IRI="#BAIT"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">9</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#minYears"/>
+        <NamedIndividual IRI="#BAIT"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#costCurrency"/>
+        <NamedIndividual IRI="#BAIT_EUR"/>
+        <Literal>EUR</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#costValue"/>
+        <NamedIndividual IRI="#BAIT_EUR"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">850</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#costCurrency"/>
+        <NamedIndividual IRI="#BAIT_SYR"/>
+        <Literal>SYR</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#costValue"/>
+        <NamedIndividual IRI="#BAIT_SYR"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1000000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#costCurrency"/>
+        <NamedIndividual IRI="#BAIT_USD"/>
+        <Literal>USD</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#costValue"/>
+        <NamedIndividual IRI="#BAIT_USD"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#maxYears"/>
+        <NamedIndividual IRI="#BIS"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">9</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#minYears"/>
+        <NamedIndividual IRI="#BIS"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#costCurrency"/>
+        <NamedIndividual IRI="#BIS_EUR"/>
+        <Literal>EUR</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#costValue"/>
+        <NamedIndividual IRI="#BIS_EUR"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">2000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#costCurrency"/>
+        <NamedIndividual IRI="#BIS_SYR"/>
+        <Literal>SYR</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#costValue"/>
+        <NamedIndividual IRI="#BIS_SYR"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">2000000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#costCurrency"/>
+        <NamedIndividual IRI="#BIS_USD"/>
+        <Literal>USD</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#costValue"/>
+        <NamedIndividual IRI="#BIS_USD"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">2400</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#costCurrency"/>
+        <NamedIndividual IRI="#Bact_EUR"/>
+        <Literal>EUR</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#costValue"/>
+        <NamedIndividual IRI="#Bact_EUR"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#costCurrency"/>
+        <NamedIndividual IRI="#ITE_EUR"/>
+        <Literal>EUR</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#costValue"/>
+        <NamedIndividual IRI="#ITE_EUR"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1500</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#costCurrency"/>
+        <NamedIndividual IRI="#ITE_SYR"/>
+        <Literal>SYR</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#costValue"/>
+        <NamedIndividual IRI="#ITE_SYR"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1800000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#costCurrency"/>
+        <NamedIndividual IRI="#ITE_USD"/>
+        <Literal>USD</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#costValue"/>
+        <NamedIndividual IRI="#ITE_USD"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1900</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#costCurrency"/>
+        <NamedIndividual IRI="#MCS_EUR"/>
+        <Literal>EUR</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#costValue"/>
+        <NamedIndividual IRI="#MCS_EUR"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#costCurrency"/>
+        <NamedIndividual IRI="#MCS_SYR"/>
+        <Literal>SYR</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#costValue"/>
+        <NamedIndividual IRI="#MCS_SYR"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">16000000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#costCurrency"/>
+        <NamedIndividual IRI="#MCS_USD"/>
+        <Literal>USD</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#costValue"/>
+        <NamedIndividual IRI="#MCS_USD"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4250</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#costCurrency"/>
+        <NamedIndividual IRI="#MNT_EUR"/>
+        <Literal>EUR</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#costValue"/>
+        <NamedIndividual IRI="#MNT_EUR"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">3000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#costCurrency"/>
+        <NamedIndividual IRI="#MNT_SYR"/>
+        <Literal>SYR</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#costValue"/>
+        <NamedIndividual IRI="#MNT_SYR"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">12000000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#costCurrency"/>
+        <NamedIndividual IRI="#MNT_USD"/>
+        <Literal>USD</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#costValue"/>
+        <NamedIndividual IRI="#MNT_USD"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">3200</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#maxYears"/>
+        <NamedIndividual IRI="#MWS"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#minYears"/>
+        <NamedIndividual IRI="#MWS"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#costCurrency"/>
+        <NamedIndividual IRI="#MWT_EUR"/>
+        <Literal>EUR</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#courseCost"/>
+        <NamedIndividual IRI="#MWT_EUR"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">5500</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#costCurrency"/>
+        <NamedIndividual IRI="#MWT_SYR"/>
+        <Literal>SYR</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#costValue"/>
+        <NamedIndividual IRI="#MWT_SYR"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">13000000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#costCurrency"/>
+        <NamedIndividual IRI="#MWT_USD"/>
+        <Literal>USD</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#costValue"/>
+        <NamedIndividual IRI="#MWT_USD"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">6000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#costCurrency"/>
+        <NamedIndividual IRI="#PHD_EUR"/>
+        <Literal>EUR</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#costValue"/>
+        <NamedIndividual IRI="#PHD_EUR"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">6700</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#costCurrency"/>
+        <NamedIndividual IRI="#PHD_SYR"/>
+        <Literal>SYR</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#costValue"/>
+        <NamedIndividual IRI="#PHD_SYR"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">17000000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#costCurrency"/>
+        <NamedIndividual IRI="#PHD_USD"/>
+        <Literal>USD</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#costValue"/>
+        <NamedIndividual IRI="#PHD_USD"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">7000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#academicRank"/>
+        <NamedIndividual IRI="#إيمان_الخطيب"/>
+        <Literal>PhD</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#emailAddress"/>
+        <NamedIndividual IRI="#إيمان_الخطيب"/>
+        <Literal>MWT_pd@svuonline.org</Literal>
+    </DataPropertyAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasCost"/>
+        <Class IRI="#Course"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasCost"/>
+        <Class IRI="#Program"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasCourse"/>
+        <Class IRI="#Program"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasManager"/>
+        <Class IRI="#Program"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#taughtBy"/>
+        <Class IRI="#Course"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasCost"/>
+        <Class IRI="#Cost"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasCourse"/>
+        <Class IRI="#Course"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasManager"/>
+        <Class IRI="#Manager"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#taughtBy"/>
+        <Class IRI="#Manager"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#emailAddress"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#maxYears"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="#costCurrency"/>
+        <Class IRI="#Cost"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#costValue"/>
+        <Class IRI="#Course"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#costValue"/>
+        <Class IRI="#Program"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#courseCost"/>
+        <Class IRI="#Course"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#emailAddress"/>
+        <Class IRI="#Teacher"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#maxYears"/>
+        <Class IRI="#Program"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#minYears"/>
+        <Class IRI="#Program"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#programCost"/>
+        <Class IRI="#Program"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#costCurrency"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#costValue"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#courseCost"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#emailAddress"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#maxYears"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#minYears"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#programCost"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
