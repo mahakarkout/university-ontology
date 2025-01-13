@@ -1,0 +1,1020 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/mahaq/ontologies/2025/0/untitled-ontology-5/"
+     xml:base="http://www.semanticweb.org/mahaq/ontologies/2025/0/untitled-ontology-5/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:universitySVU="http://www.semanticweb.org/universitySVU#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/universitySVU"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/universitySVU#hasCost -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/universitySVU#hasCost">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/universitySVU#Course"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/universitySVU#Program"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/universitySVU#Cost"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/universitySVU#hasCourse -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/universitySVU#hasCourse">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/universitySVU#Program"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/universitySVU#Course"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/universitySVU#hasManager -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/universitySVU#hasManager">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/universitySVU#Program"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/universitySVU#Manager"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/universitySVU#taughtBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/universitySVU#taughtBy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/universitySVU#Course"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/universitySVU#Manager"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/universitySVU#academicRank -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/universitySVU#academicRank"/>
+    
+
+
+    <!-- http://www.semanticweb.org/universitySVU#costCurrency -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/universitySVU#costCurrency">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/universitySVU#Cost"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/universitySVU#costValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/universitySVU#costValue">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/universitySVU#Course"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/universitySVU#Program"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/universitySVU#courseCost -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/universitySVU#courseCost">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/universitySVU#Course"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/universitySVU#emailAddress -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/universitySVU#emailAddress">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/universitySVU#Teacher"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/universitySVU#maxYears -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/universitySVU#maxYears">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/universitySVU#Program"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/universitySVU#minYears -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/universitySVU#minYears">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/universitySVU#Program"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/universitySVU#programCost -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/universitySVU#programCost">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/universitySVU#Program"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/universitySVU#Cost -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/universitySVU#Cost"/>
+    
+
+
+    <!-- http://www.semanticweb.org/universitySVU#Course -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/universitySVU#Course"/>
+    
+
+
+    <!-- http://www.semanticweb.org/universitySVU#Manager -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/universitySVU#Manager"/>
+    
+
+
+    <!-- http://www.semanticweb.org/universitySVU#Program -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/universitySVU#Program"/>
+    
+
+
+    <!-- http://www.semanticweb.org/universitySVU#Teacher -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/universitySVU#Teacher"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/universitySVU#AWM_EUR -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/universitySVU#AWM_EUR">
+        <rdf:type rdf:resource="http://www.semanticweb.org/universitySVU#Course"/>
+        <universitySVU:costCurrency>EUR</universitySVU:costCurrency>
+        <universitySVU:costValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">200</universitySVU:costValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/universitySVU#AWM_SYR -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/universitySVU#AWM_SYR">
+        <rdf:type rdf:resource="http://www.semanticweb.org/universitySVU#Course"/>
+        <universitySVU:costCurrency>SYR</universitySVU:costCurrency>
+        <universitySVU:costValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2070000</universitySVU:costValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/universitySVU#Advanced_Conceps_ln_Data_Repository__and_Data_Exchange -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/universitySVU#Advanced_Conceps_ln_Data_Repository__and_Data_Exchange">
+        <rdf:type rdf:resource="http://www.semanticweb.org/universitySVU#Course"/>
+        <universitySVU:taughtBy rdf:resource="http://www.semanticweb.org/universitySVU#عبده_الخوري"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/universitySVU#Advanced_SQL_Programming -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/universitySVU#Advanced_SQL_Programming">
+        <rdf:type rdf:resource="http://www.semanticweb.org/universitySVU#Course"/>
+        <universitySVU:taughtBy rdf:resource="http://www.semanticweb.org/universitySVU#أبي_صندوق"/>
+        <universitySVU:taughtBy rdf:resource="http://www.semanticweb.org/universitySVU#عبده_الخوري"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/universitySVU#BACT -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/universitySVU#BACT">
+        <rdf:type rdf:resource="http://www.semanticweb.org/universitySVU#Program"/>
+        <universitySVU:hasCost rdf:resource="http://www.semanticweb.org/universitySVU#BACT_SYR"/>
+        <universitySVU:hasCost rdf:resource="http://www.semanticweb.org/universitySVU#BACT_USD"/>
+        <universitySVU:hasCost rdf:resource="http://www.semanticweb.org/universitySVU#Bact_EUR"/>
+        <universitySVU:hasCourse rdf:resource="http://www.semanticweb.org/universitySVU#Data_mining"/>
+        <universitySVU:hasCourse rdf:resource="http://www.semanticweb.org/universitySVU#Decision_Theory"/>
+        <universitySVU:hasCourse rdf:resource="http://www.semanticweb.org/universitySVU#Routing_Principles"/>
+        <universitySVU:hasManager rdf:resource="http://www.semanticweb.org/universitySVU#رضوان_قسطنطين"/>
+        <universitySVU:maxYears rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">9</universitySVU:maxYears>
+        <universitySVU:minYears rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</universitySVU:minYears>
+        <universitySVU:programCost rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">400</universitySVU:programCost>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/universitySVU#BACT_SYR -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/universitySVU#BACT_SYR">
+        <rdf:type rdf:resource="http://www.semanticweb.org/universitySVU#Program"/>
+        <universitySVU:costCurrency>SYR</universitySVU:costCurrency>
+        <universitySVU:costValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1500000</universitySVU:costValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/universitySVU#BACT_USD -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/universitySVU#BACT_USD">
+        <rdf:type rdf:resource="http://www.semanticweb.org/universitySVU#Program"/>
+        <universitySVU:costCurrency>USD</universitySVU:costCurrency>
+        <universitySVU:costValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1300</universitySVU:costValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/universitySVU#BAIT -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/universitySVU#BAIT">
+        <rdf:type rdf:resource="http://www.semanticweb.org/universitySVU#Program"/>
+        <universitySVU:hasCost rdf:resource="http://www.semanticweb.org/universitySVU#BAIT_SYR"/>
+        <universitySVU:hasCost rdf:resource="http://www.semanticweb.org/universitySVU#BAIT_USD"/>
+        <universitySVU:hasCost rdf:resource="http://www.semanticweb.org/universitySVU#Bact_EUR"/>
+        <universitySVU:hasCourse rdf:resource="http://www.semanticweb.org/universitySVU#Computer_Skills"/>
+        <universitySVU:hasCourse rdf:resource="http://www.semanticweb.org/universitySVU#Data_mining"/>
+        <universitySVU:hasCourse rdf:resource="http://www.semanticweb.org/universitySVU#Decision_Theory"/>
+        <universitySVU:hasCourse rdf:resource="http://www.semanticweb.org/universitySVU#Digital_Electronics"/>
+        <universitySVU:hasCourse rdf:resource="http://www.semanticweb.org/universitySVU#Distributed__Applications__Programming"/>
+        <universitySVU:hasManager rdf:resource="http://www.semanticweb.org/universitySVU#زهير_أحمد"/>
+        <universitySVU:maxYears rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">9</universitySVU:maxYears>
+        <universitySVU:minYears rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4</universitySVU:minYears>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/universitySVU#BAIT_EUR -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/universitySVU#BAIT_EUR">
+        <rdf:type rdf:resource="http://www.semanticweb.org/universitySVU#Program"/>
+        <universitySVU:costCurrency>EUR</universitySVU:costCurrency>
+        <universitySVU:costValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">850</universitySVU:costValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/universitySVU#BAIT_SYR -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/universitySVU#BAIT_SYR">
+        <rdf:type rdf:resource="http://www.semanticweb.org/universitySVU#Program"/>
+        <universitySVU:costCurrency>SYR</universitySVU:costCurrency>
+        <universitySVU:costValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1000000</universitySVU:costValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/universitySVU#BAIT_USD -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/universitySVU#BAIT_USD">
+        <rdf:type rdf:resource="http://www.semanticweb.org/universitySVU#Program"/>
+        <universitySVU:costCurrency>USD</universitySVU:costCurrency>
+        <universitySVU:costValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1000</universitySVU:costValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/universitySVU#BIS -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/universitySVU#BIS">
+        <rdf:type rdf:resource="http://www.semanticweb.org/universitySVU#Program"/>
+        <universitySVU:hasCost rdf:resource="http://www.semanticweb.org/universitySVU#BIS_EUR"/>
+        <universitySVU:hasCost rdf:resource="http://www.semanticweb.org/universitySVU#BIS_SYR"/>
+        <universitySVU:hasCost rdf:resource="http://www.semanticweb.org/universitySVU#BIS_USD"/>
+        <universitySVU:hasCourse rdf:resource="http://www.semanticweb.org/universitySVU#Advanced_Conceps_ln_Data_Repository__and_Data_Exchange"/>
+        <universitySVU:hasCourse rdf:resource="http://www.semanticweb.org/universitySVU#Advanced_SQL_Programming"/>
+        <universitySVU:hasCourse rdf:resource="http://www.semanticweb.org/universitySVU#Mobile_Web"/>
+        <universitySVU:hasCourse rdf:resource="http://www.semanticweb.org/universitySVU#Web_Mining"/>
+        <universitySVU:hasManager rdf:resource="http://www.semanticweb.org/universitySVU#مجد_محمد_نصوح_الجمالي"/>
+        <universitySVU:maxYears rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">9</universitySVU:maxYears>
+        <universitySVU:minYears rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4</universitySVU:minYears>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/universitySVU#BIS_EUR -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/universitySVU#BIS_EUR">
+        <rdf:type rdf:resource="http://www.semanticweb.org/universitySVU#Program"/>
+        <universitySVU:costCurrency>EUR</universitySVU:costCurrency>
+        <universitySVU:costValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2000</universitySVU:costValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/universitySVU#BIS_SYR -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/universitySVU#BIS_SYR">
+        <rdf:type rdf:resource="http://www.semanticweb.org/universitySVU#Program"/>
+        <universitySVU:costCurrency>SYR</universitySVU:costCurrency>
+        <universitySVU:costValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2000000</universitySVU:costValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/universitySVU#BIS_USD -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/universitySVU#BIS_USD">
+        <rdf:type rdf:resource="http://www.semanticweb.org/universitySVU#Program"/>
+        <universitySVU:costCurrency>USD</universitySVU:costCurrency>
+        <universitySVU:costValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2400</universitySVU:costValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/universitySVU#Bact_EUR -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/universitySVU#Bact_EUR">
+        <rdf:type rdf:resource="http://www.semanticweb.org/universitySVU#Program"/>
+        <universitySVU:costCurrency>EUR</universitySVU:costCurrency>
+        <universitySVU:costValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1000</universitySVU:costValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/universitySVU#Computer_Skills -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/universitySVU#Computer_Skills">
+        <rdf:type rdf:resource="http://www.semanticweb.org/universitySVU#Course"/>
+        <universitySVU:taughtBy rdf:resource="http://www.semanticweb.org/universitySVU#خالد_عمر"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/universitySVU#Data_mining -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/universitySVU#Data_mining">
+        <rdf:type rdf:resource="http://www.semanticweb.org/universitySVU#Course"/>
+        <universitySVU:taughtBy rdf:resource="http://www.semanticweb.org/universitySVU#ديانا_الجوهري"/>
+        <universitySVU:taughtBy rdf:resource="http://www.semanticweb.org/universitySVU#عبده_الخوري"/>
+        <universitySVU:taughtBy rdf:resource="http://www.semanticweb.org/universitySVU#ماجدة_البكور"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/universitySVU#Decision_Theory -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/universitySVU#Decision_Theory">
+        <rdf:type rdf:resource="http://www.semanticweb.org/universitySVU#Course"/>
+        <universitySVU:taughtBy rdf:resource="http://www.semanticweb.org/universitySVU#رائوف_حمدان"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/universitySVU#Digital_Electronics -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/universitySVU#Digital_Electronics">
+        <rdf:type rdf:resource="http://www.semanticweb.org/universitySVU#Course"/>
+        <universitySVU:taughtBy rdf:resource="http://www.semanticweb.org/universitySVU#محمد_المصطفى"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/universitySVU#Distributed__Applications__Programming -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/universitySVU#Distributed__Applications__Programming">
+        <rdf:type rdf:resource="http://www.semanticweb.org/universitySVU#Course"/>
+        <universitySVU:taughtBy rdf:resource="http://www.semanticweb.org/universitySVU#وسيم_الجنيدي"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/universitySVU#EUR -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/universitySVU#EUR">
+        <rdf:type rdf:resource="http://www.semanticweb.org/universitySVU#Cost"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/universitySVU#Hyper_and_Multimedia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/universitySVU#Hyper_and_Multimedia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/universitySVU#Course"/>
+        <universitySVU:taughtBy rdf:resource="http://www.semanticweb.org/universitySVU#محمد_الجنيدي"/>
+        <universitySVU:taughtBy rdf:resource="http://www.semanticweb.org/universitySVU#وسيم_صافي"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/universitySVU#ITE -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/universitySVU#ITE">
+        <rdf:type rdf:resource="http://www.semanticweb.org/universitySVU#Program"/>
+        <universitySVU:hasCost rdf:resource="http://www.semanticweb.org/universitySVU#ITE_EUR"/>
+        <universitySVU:hasCost rdf:resource="http://www.semanticweb.org/universitySVU#ITE_SYR"/>
+        <universitySVU:hasCost rdf:resource="http://www.semanticweb.org/universitySVU#ITE_USD"/>
+        <universitySVU:hasCourse rdf:resource="http://www.semanticweb.org/universitySVU#Computer_Skills"/>
+        <universitySVU:hasCourse rdf:resource="http://www.semanticweb.org/universitySVU#Digital_Electronics"/>
+        <universitySVU:hasCourse rdf:resource="http://www.semanticweb.org/universitySVU#Web_Engineering"/>
+        <universitySVU:hasCourse rdf:resource="http://www.semanticweb.org/universitySVU#Web_Security"/>
+        <universitySVU:hasCourse rdf:resource="http://www.semanticweb.org/universitySVU#lnformation_Retrieval"/>
+        <universitySVU:hasCourse rdf:resource="http://www.semanticweb.org/universitySVU#lntroduction_to_Networks"/>
+        <universitySVU:hasManager rdf:resource="http://www.semanticweb.org/universitySVU#محمد_الجنيدي"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/universitySVU#ITE_EUR -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/universitySVU#ITE_EUR">
+        <rdf:type rdf:resource="http://www.semanticweb.org/universitySVU#Program"/>
+        <universitySVU:costCurrency>EUR</universitySVU:costCurrency>
+        <universitySVU:costValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1500</universitySVU:costValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/universitySVU#ITE_SYR -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/universitySVU#ITE_SYR">
+        <rdf:type rdf:resource="http://www.semanticweb.org/universitySVU#Program"/>
+        <universitySVU:costCurrency>SYR</universitySVU:costCurrency>
+        <universitySVU:costValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1800000</universitySVU:costValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/universitySVU#ITE_USD -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/universitySVU#ITE_USD">
+        <rdf:type rdf:resource="http://www.semanticweb.org/universitySVU#Program"/>
+        <universitySVU:costCurrency>USD</universitySVU:costCurrency>
+        <universitySVU:costValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1900</universitySVU:costValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/universitySVU#MCS -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/universitySVU#MCS">
+        <rdf:type rdf:resource="http://www.semanticweb.org/universitySVU#Program"/>
+        <universitySVU:hasCost rdf:resource="http://www.semanticweb.org/universitySVU#MCS_EUR"/>
+        <universitySVU:hasCost rdf:resource="http://www.semanticweb.org/universitySVU#MCS_SYR"/>
+        <universitySVU:hasCost rdf:resource="http://www.semanticweb.org/universitySVU#MCS_USD"/>
+        <universitySVU:hasCourse rdf:resource="http://www.semanticweb.org/universitySVU#Advanced_Conceps_ln_Data_Repository__and_Data_Exchange"/>
+        <universitySVU:hasCourse rdf:resource="http://www.semanticweb.org/universitySVU#Decision_Theory"/>
+        <universitySVU:hasCourse rdf:resource="http://www.semanticweb.org/universitySVU#Hyper_and_Multimedia"/>
+        <universitySVU:hasCourse rdf:resource="http://www.semanticweb.org/universitySVU#Routing_Principles"/>
+        <universitySVU:hasCourse rdf:resource="http://www.semanticweb.org/universitySVU#Web_Engineering"/>
+        <universitySVU:hasCourse rdf:resource="http://www.semanticweb.org/universitySVU#lntroduction_to_Networks"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/universitySVU#MCS_EUR -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/universitySVU#MCS_EUR">
+        <rdf:type rdf:resource="http://www.semanticweb.org/universitySVU#Program"/>
+        <universitySVU:costCurrency>EUR</universitySVU:costCurrency>
+        <universitySVU:costValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4000</universitySVU:costValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/universitySVU#MCS_SYR -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/universitySVU#MCS_SYR">
+        <rdf:type rdf:resource="http://www.semanticweb.org/universitySVU#Program"/>
+        <universitySVU:costCurrency>SYR</universitySVU:costCurrency>
+        <universitySVU:costValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">16000000</universitySVU:costValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/universitySVU#MCS_USD -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/universitySVU#MCS_USD">
+        <rdf:type rdf:resource="http://www.semanticweb.org/universitySVU#Program"/>
+        <universitySVU:costCurrency>USD</universitySVU:costCurrency>
+        <universitySVU:costValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4250</universitySVU:costValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/universitySVU#MNT -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/universitySVU#MNT">
+        <rdf:type rdf:resource="http://www.semanticweb.org/universitySVU#Program"/>
+        <universitySVU:hasCost rdf:resource="http://www.semanticweb.org/universitySVU#MNT_EUR"/>
+        <universitySVU:hasCost rdf:resource="http://www.semanticweb.org/universitySVU#MNT_SYR"/>
+        <universitySVU:hasCost rdf:resource="http://www.semanticweb.org/universitySVU#MNT_USD"/>
+        <universitySVU:hasCourse rdf:resource="http://www.semanticweb.org/universitySVU#Advanced_SQL_Programming"/>
+        <universitySVU:hasCourse rdf:resource="http://www.semanticweb.org/universitySVU#Digital_Electronics"/>
+        <universitySVU:hasCourse rdf:resource="http://www.semanticweb.org/universitySVU#Mobile_Web"/>
+        <universitySVU:hasCourse rdf:resource="http://www.semanticweb.org/universitySVU#Web_Security"/>
+        <universitySVU:hasCourse rdf:resource="http://www.semanticweb.org/universitySVU#lnformation_Retrieval"/>
+        <universitySVU:hasManager rdf:resource="http://www.semanticweb.org/universitySVU#وسيم_الجنيدي"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/universitySVU#MNT_EUR -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/universitySVU#MNT_EUR">
+        <rdf:type rdf:resource="http://www.semanticweb.org/universitySVU#Program"/>
+        <universitySVU:costCurrency>EUR</universitySVU:costCurrency>
+        <universitySVU:costValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3000</universitySVU:costValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/universitySVU#MNT_SYR -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/universitySVU#MNT_SYR">
+        <rdf:type rdf:resource="http://www.semanticweb.org/universitySVU#Program"/>
+        <universitySVU:costCurrency>SYR</universitySVU:costCurrency>
+        <universitySVU:costValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12000000</universitySVU:costValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/universitySVU#MNT_USD -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/universitySVU#MNT_USD">
+        <rdf:type rdf:resource="http://www.semanticweb.org/universitySVU#Program"/>
+        <universitySVU:costCurrency>USD</universitySVU:costCurrency>
+        <universitySVU:costValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3200</universitySVU:costValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/universitySVU#MWS -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/universitySVU#MWS">
+        <rdf:type rdf:resource="http://www.semanticweb.org/universitySVU#Program"/>
+        <universitySVU:hasCost rdf:resource="http://www.semanticweb.org/universitySVU#MWS_EUR"/>
+        <universitySVU:hasCost rdf:resource="http://www.semanticweb.org/universitySVU#MWS_SYR"/>
+        <universitySVU:hasCost rdf:resource="http://www.semanticweb.org/universitySVU#MWS_USD"/>
+        <universitySVU:hasCourse rdf:resource="http://www.semanticweb.org/universitySVU#Advanced_Conceps_ln_Data_Repository__and_Data_Exchange"/>
+        <universitySVU:hasCourse rdf:resource="http://www.semanticweb.org/universitySVU#Computer_Skills"/>
+        <universitySVU:hasCourse rdf:resource="http://www.semanticweb.org/universitySVU#Data_mining"/>
+        <universitySVU:hasCourse rdf:resource="http://www.semanticweb.org/universitySVU#Hyper_and_Multimedia"/>
+        <universitySVU:hasCourse rdf:resource="http://www.semanticweb.org/universitySVU#Mobile_Web"/>
+        <universitySVU:hasCourse rdf:resource="http://www.semanticweb.org/universitySVU#Web_Engineering"/>
+        <universitySVU:hasCourse rdf:resource="http://www.semanticweb.org/universitySVU#Web_Mining"/>
+        <universitySVU:hasCourse rdf:resource="http://www.semanticweb.org/universitySVU#Web_Security"/>
+        <universitySVU:hasManager rdf:resource="http://www.semanticweb.org/universitySVU#باسل_الخطيب"/>
+        <universitySVU:maxYears rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4</universitySVU:maxYears>
+        <universitySVU:minYears rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</universitySVU:minYears>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/universitySVU#MWS_EUR -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/universitySVU#MWS_EUR">
+        <rdf:type rdf:resource="http://www.semanticweb.org/universitySVU#Program"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/universitySVU#MWS_SYR -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/universitySVU#MWS_SYR">
+        <rdf:type rdf:resource="http://www.semanticweb.org/universitySVU#Program"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/universitySVU#MWS_USD -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/universitySVU#MWS_USD">
+        <rdf:type rdf:resource="http://www.semanticweb.org/universitySVU#Program"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/universitySVU#MWT -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/universitySVU#MWT">
+        <rdf:type rdf:resource="http://www.semanticweb.org/universitySVU#Program"/>
+        <universitySVU:hasCost rdf:resource="http://www.semanticweb.org/universitySVU#MWT_EUR"/>
+        <universitySVU:hasCost rdf:resource="http://www.semanticweb.org/universitySVU#MWT_SYR"/>
+        <universitySVU:hasCost rdf:resource="http://www.semanticweb.org/universitySVU#MWT_USD"/>
+        <universitySVU:hasCourse rdf:resource="http://www.semanticweb.org/universitySVU#Advanced_Conceps_ln_Data_Repository__and_Data_Exchange"/>
+        <universitySVU:hasCourse rdf:resource="http://www.semanticweb.org/universitySVU#Decision_Theory"/>
+        <universitySVU:hasCourse rdf:resource="http://www.semanticweb.org/universitySVU#Distributed__Applications__Programming"/>
+        <universitySVU:hasCourse rdf:resource="http://www.semanticweb.org/universitySVU#Hyper_and_Multimedia"/>
+        <universitySVU:hasCourse rdf:resource="http://www.semanticweb.org/universitySVU#Routing_Principles"/>
+        <universitySVU:hasManager rdf:resource="http://www.semanticweb.org/universitySVU#سيرا_أستور"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/universitySVU#MWT_EUR -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/universitySVU#MWT_EUR">
+        <rdf:type rdf:resource="http://www.semanticweb.org/universitySVU#Program"/>
+        <universitySVU:costCurrency>EUR</universitySVU:costCurrency>
+        <universitySVU:courseCost rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5500</universitySVU:courseCost>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/universitySVU#MWT_SYR -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/universitySVU#MWT_SYR">
+        <rdf:type rdf:resource="http://www.semanticweb.org/universitySVU#Program"/>
+        <universitySVU:costCurrency>SYR</universitySVU:costCurrency>
+        <universitySVU:costValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">13000000</universitySVU:costValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/universitySVU#MWT_USD -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/universitySVU#MWT_USD">
+        <rdf:type rdf:resource="http://www.semanticweb.org/universitySVU#Program"/>
+        <universitySVU:costCurrency>USD</universitySVU:costCurrency>
+        <universitySVU:costValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6000</universitySVU:costValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/universitySVU#Mobile_Web -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/universitySVU#Mobile_Web">
+        <rdf:type rdf:resource="http://www.semanticweb.org/universitySVU#Course"/>
+        <universitySVU:taughtBy rdf:resource="http://www.semanticweb.org/universitySVU#راتب_بلخي"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/universitySVU#PHD_EUR -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/universitySVU#PHD_EUR">
+        <rdf:type rdf:resource="http://www.semanticweb.org/universitySVU#Program"/>
+        <universitySVU:costCurrency>EUR</universitySVU:costCurrency>
+        <universitySVU:costValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6700</universitySVU:costValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/universitySVU#PHD_SYR -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/universitySVU#PHD_SYR">
+        <rdf:type rdf:resource="http://www.semanticweb.org/universitySVU#Program"/>
+        <universitySVU:costCurrency>SYR</universitySVU:costCurrency>
+        <universitySVU:costValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">17000000</universitySVU:costValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/universitySVU#PHD_USD -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/universitySVU#PHD_USD">
+        <rdf:type rdf:resource="http://www.semanticweb.org/universitySVU#Program"/>
+        <universitySVU:costCurrency>USD</universitySVU:costCurrency>
+        <universitySVU:costValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7000</universitySVU:costValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/universitySVU#PhD_in_informatics -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/universitySVU#PhD_in_informatics">
+        <rdf:type rdf:resource="http://www.semanticweb.org/universitySVU#Program"/>
+        <universitySVU:hasCost rdf:resource="http://www.semanticweb.org/universitySVU#PHD_EUR"/>
+        <universitySVU:hasCost rdf:resource="http://www.semanticweb.org/universitySVU#PHD_SYR"/>
+        <universitySVU:hasCost rdf:resource="http://www.semanticweb.org/universitySVU#PHD_USD"/>
+        <universitySVU:hasCourse rdf:resource="http://www.semanticweb.org/universitySVU#Computer_Skills"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/universitySVU#Routing_Principles -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/universitySVU#Routing_Principles">
+        <rdf:type rdf:resource="http://www.semanticweb.org/universitySVU#Course"/>
+        <universitySVU:taughtBy rdf:resource="http://www.semanticweb.org/universitySVU#سيرا_أستور"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/universitySVU#SYR -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/universitySVU#SYR">
+        <rdf:type rdf:resource="http://www.semanticweb.org/universitySVU#Cost"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/universitySVU#USD -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/universitySVU#USD">
+        <rdf:type rdf:resource="http://www.semanticweb.org/universitySVU#Cost"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/universitySVU#Web_Engineering -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/universitySVU#Web_Engineering">
+        <rdf:type rdf:resource="http://www.semanticweb.org/universitySVU#Course"/>
+        <universitySVU:taughtBy rdf:resource="http://www.semanticweb.org/universitySVU#رداد_الكنج"/>
+        <universitySVU:taughtBy rdf:resource="http://www.semanticweb.org/universitySVU#عبده_الخوري"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/universitySVU#Web_Mining -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/universitySVU#Web_Mining">
+        <rdf:type rdf:resource="http://www.semanticweb.org/universitySVU#Course"/>
+        <universitySVU:hasCost rdf:resource="http://www.semanticweb.org/universitySVU#AWM_EUR"/>
+        <universitySVU:hasCost rdf:resource="http://www.semanticweb.org/universitySVU#AWM_SYR"/>
+        <universitySVU:taughtBy rdf:resource="http://www.semanticweb.org/universitySVU#إيمان_الخطيب"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/universitySVU#Web_Security -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/universitySVU#Web_Security">
+        <rdf:type rdf:resource="http://www.semanticweb.org/universitySVU#Course"/>
+        <universitySVU:taughtBy rdf:resource="http://www.semanticweb.org/universitySVU#محمد_الجنيدي"/>
+        <universitySVU:taughtBy rdf:resource="http://www.semanticweb.org/universitySVU#وسيم_الجنيدي"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/universitySVU#lnformation_Retrieval -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/universitySVU#lnformation_Retrieval">
+        <rdf:type rdf:resource="http://www.semanticweb.org/universitySVU#Course"/>
+        <universitySVU:taughtBy rdf:resource="http://www.semanticweb.org/universitySVU#باسل_الخطيب"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/universitySVU#lntroduction_to_Networks -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/universitySVU#lntroduction_to_Networks">
+        <rdf:type rdf:resource="http://www.semanticweb.org/universitySVU#Course"/>
+        <universitySVU:taughtBy rdf:resource="http://www.semanticweb.org/universitySVU#محمد_الجنيدي"/>
+        <universitySVU:taughtBy rdf:resource="http://www.semanticweb.org/universitySVU#وسيم_الجنيدي"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/universitySVU#web_programing -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/universitySVU#web_programing">
+        <rdf:type rdf:resource="http://www.semanticweb.org/universitySVU#Course"/>
+        <universitySVU:taughtBy rdf:resource="http://www.semanticweb.org/universitySVU#جورج_كراز"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/universitySVU#أبي_صندوق -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/universitySVU#أبي_صندوق">
+        <rdf:type rdf:resource="http://www.semanticweb.org/universitySVU#Teacher"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/universitySVU#إيمان_الخطيب -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/universitySVU#إيمان_الخطيب">
+        <rdf:type rdf:resource="http://www.semanticweb.org/universitySVU#Teacher"/>
+        <universitySVU:academicRank>PhD</universitySVU:academicRank>
+        <universitySVU:emailAddress>MWT_pd@svuonline.org</universitySVU:emailAddress>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/universitySVU#باسل_الخطيب -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/universitySVU#باسل_الخطيب">
+        <rdf:type rdf:resource="http://www.semanticweb.org/universitySVU#Manager"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/universitySVU#بسام_الكردي -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/universitySVU#بسام_الكردي">
+        <rdf:type rdf:resource="http://www.semanticweb.org/universitySVU#Teacher"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/universitySVU#جورج_كراز -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/universitySVU#جورج_كراز">
+        <rdf:type rdf:resource="http://www.semanticweb.org/universitySVU#Teacher"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/universitySVU#خالد_عمر -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/universitySVU#خالد_عمر">
+        <rdf:type rdf:resource="http://www.semanticweb.org/universitySVU#Teacher"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/universitySVU#ديانا_الجوهري -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/universitySVU#ديانا_الجوهري">
+        <rdf:type rdf:resource="http://www.semanticweb.org/universitySVU#Teacher"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/universitySVU#رائوف_حمدان -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/universitySVU#رائوف_حمدان">
+        <rdf:type rdf:resource="http://www.semanticweb.org/universitySVU#Teacher"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/universitySVU#راتب_بلخي -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/universitySVU#راتب_بلخي">
+        <rdf:type rdf:resource="http://www.semanticweb.org/universitySVU#Manager"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/universitySVU#رداد_الكنج -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/universitySVU#رداد_الكنج">
+        <rdf:type rdf:resource="http://www.semanticweb.org/universitySVU#Teacher"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/universitySVU#رضوان_قسطنطين -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/universitySVU#رضوان_قسطنطين">
+        <rdf:type rdf:resource="http://www.semanticweb.org/universitySVU#Manager"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/universitySVU#زهير_أحمد -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/universitySVU#زهير_أحمد">
+        <rdf:type rdf:resource="http://www.semanticweb.org/universitySVU#Manager"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/universitySVU#سيرا_أستور -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/universitySVU#سيرا_أستور">
+        <rdf:type rdf:resource="http://www.semanticweb.org/universitySVU#Manager"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/universitySVU#طارق_الساطي -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/universitySVU#طارق_الساطي">
+        <rdf:type rdf:resource="http://www.semanticweb.org/universitySVU#Teacher"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/universitySVU#طلال_الشهابي -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/universitySVU#طلال_الشهابي">
+        <rdf:type rdf:resource="http://www.semanticweb.org/universitySVU#Manager"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/universitySVU#عبده_الخوري -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/universitySVU#عبده_الخوري">
+        <rdf:type rdf:resource="http://www.semanticweb.org/universitySVU#Teacher"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/universitySVU#عمر_النحاس -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/universitySVU#عمر_النحاس">
+        <rdf:type rdf:resource="http://www.semanticweb.org/universitySVU#Teacher"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/universitySVU#ماجدة_البكور -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/universitySVU#ماجدة_البكور">
+        <rdf:type rdf:resource="http://www.semanticweb.org/universitySVU#Teacher"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/universitySVU#مجد_محمد_نصوح_الجمالي -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/universitySVU#مجد_محمد_نصوح_الجمالي">
+        <rdf:type rdf:resource="http://www.semanticweb.org/universitySVU#Manager"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/universitySVU#محمد_الجنيدي -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/universitySVU#محمد_الجنيدي">
+        <rdf:type rdf:resource="http://www.semanticweb.org/universitySVU#Manager"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/universitySVU#محمد_المصطفى -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/universitySVU#محمد_المصطفى">
+        <rdf:type rdf:resource="http://www.semanticweb.org/universitySVU#Teacher"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/universitySVU#محمد_حجوز -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/universitySVU#محمد_حجوز">
+        <rdf:type rdf:resource="http://www.semanticweb.org/universitySVU#Teacher"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/universitySVU#محمد_سعيد_أبو_تراب -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/universitySVU#محمد_سعيد_أبو_تراب">
+        <rdf:type rdf:resource="http://www.semanticweb.org/universitySVU#Teacher"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/universitySVU#وسيم_الجنيدي -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/universitySVU#وسيم_الجنيدي">
+        <rdf:type rdf:resource="http://www.semanticweb.org/universitySVU#Manager"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/universitySVU#وسيم_صافي -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/universitySVU#وسيم_صافي">
+        <rdf:type rdf:resource="http://www.semanticweb.org/universitySVU#Teacher"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
